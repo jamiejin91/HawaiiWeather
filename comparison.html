@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>WeatherPy-Comparison</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N" crossorigin="anonymous">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="col-md-1"></div>
+          <a class="navbar-brand" href="index.html">
+            <span class="nav-color"><i class="glyphicon glyphicon-home">WeatherPy</i></span>
+          </a>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="temperature.html"><i class="glyphicon glyphicon-scale">Temperature</i></a></li>
+                  <li><a href="humidity.html"><i class="glyphicon glyphicon-tint">Humidity</i></a></li>
+                  <li><a href="cloudiness.html"><i class="glyphicon glyphicon-cloud">Cloudiness</i></a></li>
+                  <li><a href="windspeed.html"><i class="glyphicon glyphicon-flag">WindSpeed</i></a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+  <div class="container-fluid" style="width:90%">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12 ">
+            <center><h2>Comparison: Latitude vs. X</h2></center>
+            <hr/>
+            <center><p>Click on any plot to get an in-depth analysis.</p></center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center><h4>vs. Max Temperature</h4></center>
+              <a href="temperature.html"><img class="img-responsive" src="resources/1_LatvsTemp.png"></a>
+              <div class="hidden-md hidden-lg"><hr></div>
+            </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center><h4>vs. Humidity</h4></center>
+            <a href="humidity.html"><img class="img-responsive" src="resources/2_LatvsHum.png"></a>
+            <div class="hidden-md hidden-lg"><hr></div>
+          </div>           
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center><h4>vs. Cloudiness</h4></center>
+            <a href="cloudiness.html"><img class="img-responsive" src="resources/3_LatvsCloud.png"></a>
+            <div class="hidden-md hidden-lg"><hr></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center><h4>vs. Wind Speed</h4></center>
+            <a href="windspeed.html"><img class="img-responsive" src="resources/4_LatvsWind.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <footer>
+    <p style = "text-align: center; color: black; background-color: #F7F9F9;"><i class="glyphicon glyphicon-copyright-mark"><a href="http://www.linkedin.com/in/xinchengjamiejin.com">Copyright Xincheng Jamie Jin</a></i></p>
+  </footer>
+</body>
+</html>
